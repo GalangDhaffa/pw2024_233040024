@@ -11,13 +11,13 @@
 
         .kotak {
             text-align: center;
-            line-height: 100px;
             font-size: 25px;
             font-weight: bold;
             background-color: #BBE2EC;
             width: 100px;
             height: 100px;
             border: 1px solid black;
+            line-height: 100px;
         }
     </style>
 </head>
