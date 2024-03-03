@@ -17,9 +17,9 @@
             text-align: center;
             font-size: 24px;
             font-weight: bold;
-            color: white;
+            color: black;
             border: 1px solid black;
-            background-color: red;
+            background-color: #BBE2EC ;
         }
     </style>
 </head>
