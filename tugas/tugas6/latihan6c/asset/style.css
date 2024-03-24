@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Workbench", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(131, 58, 180);
+  background: rgb(182, 255, 250);
+  background: linear-gradient(
+    150deg,
+    rgba(182, 255, 250, 1) 10%,
+    rgba(152, 228, 255, 1) 50%,
+    rgba(104, 126, 255, 1) 90%
+  );
+}
+
+.card {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 2);
+}
+
+.card#admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card#admin h2 {
+  margin: 10px 0;
+}
+
+.card-header {
+  padding: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btn-login {
+  float: left;
+  background-color: #b6fffa;
+  color: rgb(0, 0, 0);
+}
+
+.btn-login:hover {
+  background-color: #010158;
+  color: rgb(255, 255, 255);
+}
+
+.btn-logout {
+  display: flex;
+  background-color: red;
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: darkred;
+}
+
+.alert {
+  background-color: lightpink;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 20px 40px;
+}
