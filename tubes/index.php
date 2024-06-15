@@ -1,6 +1,6 @@
 <?php 
 
-require 'fungctions.php';
+require 'functions.php';
 
 $mahasiswa = query("SELECT * FROM mahasiswa");
 
@@ -42,8 +42,8 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
       <td><?= $mhs['email'] ?></td>
       <td><?= $mhs['jurusan'] ?></td>
       <td>
-        <a href="#" class="badge text-bg-warning text-decoration-none">ubah</a>
-        <a href="#" class="badge text-bg-danger text-decoration-none" >hapus</a>
+        <a href="ubah.php?id=<?= $mhs['id'] ?>" class="badge text-bg-warning text-decoration-none">ubah</a>
+        <a href="hapus.php?id=<?= $mhs['id'] ?>" onclick="return confirm('apakah anda yakin?')" class="badge text-bg-danger text-decoration-none" >hapus</a>
       </td>
     </tr>
    <?php endforeach ; ?>

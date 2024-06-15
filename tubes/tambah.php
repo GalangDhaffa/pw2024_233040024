@@ -1,3 +1,17 @@
+<?php 
+require 'functions.php';
+
+// jika tombol tambah diklik
+if(isset($_POST['tambah'])) {
+  if(tambah($_POST) > 0) {
+    echo "<script>
+          alert('data berhasil di tambahkan!');
+          document.location.href = 'index.php';
+          </script>";
+    }
+  }
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -16,22 +30,22 @@
           <div class="mb-3">
           <label for="nama" class="form-label">Nama</label>
           <input type="text" class="form-control" id="nama"
-          name="nama">
+          name="nama" required>
           </div>
           <div class="mb-3">
-          <label for="nama" class="form-label">NIM</label>
+          <label for="nim" class="form-label">NIM</label>
           <input type="text" class="form-control" id="nim"
-          name="nim">
+          name="nim" required>
           </div>
           <div class="mb-3">
-          <label for="nama" class="form-label">Email</label>
+          <label for="email" class="form-label">Email</label>
           <input type="text" class="form-control" id="email"
-          name="email">
+          name="email" required>
           </div>
           <div class="mb-3">
-          <label for="nama" class="form-label">Jurusan</label>
+          <label for="jurusan" class="form-label">Jurusan</label>
           <input type="text" class="form-control" id="jurusan"
-          name="jurusan">
+          name="jurusan" required>
           </div>
           <button type="submit" name="tambah" class="btn btn-primary">Tambah Data</button>
         </form>
